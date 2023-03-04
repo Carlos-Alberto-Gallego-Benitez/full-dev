@@ -54,6 +54,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+.projects {
+    background-color: white  !important;
+    color: black !important;
+}
+.titleProjects{
+    color: white;
+}
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
@@ -84,6 +91,11 @@ section .title::before{
     height: 3px;
     background: #111;
     transform: translateX(-50%);
+}
+.imgproyects{
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
 }
 section .title::after{
     position: absolute;
@@ -305,7 +317,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.services .serv-content  .card:hover{
     background: crimson;
 }
 .services .serv-content .card .box{
@@ -323,6 +335,37 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .serv-content  .card:hover{
+    background: crimson;
+}
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .serv-content .card:hover i{
+    color: #fff;
+}
+.projects .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
