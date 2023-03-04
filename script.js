@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["Java", "Python", "C++", "Node js", "React", "Angular", "Js"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -60,12 +60,12 @@ $(document).ready(function(){
                 items: 1,
                 nav: false
             },
-            600:{
+            60:{
                 items: 2,
                 nav: false
             },
-            1000:{
-                items: 3,
+            20:{
+                items: 2,
                 nav: false
             }
         }

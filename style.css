@@ -26,6 +26,10 @@ html{
     background: #555;
 }
 
+.justify-text{
+    text-align: justify;
+}
+
 /* all similar content styling codes */
 section{
     padding: 100px 0;
