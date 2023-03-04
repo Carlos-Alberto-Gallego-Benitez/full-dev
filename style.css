@@ -7,19 +7,34 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
+    height: 10px;
+    
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 20px;
+}
+
+.prg{
+    background-image: url('/images/programador.png');
+    height: 100%;
+    width: 100%;
+}
+
+.flex{
+   display: flex;
+   justify-content: center;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -35,7 +50,7 @@ section{
     padding: 100px 0;
 }
 .max-width{
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     padding: 0 80px;
     margin: auto;
 }
@@ -79,6 +94,11 @@ section .title::after{
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
+}
+
+.bold{
+    font-weight: 500;
+    color: black;
 }
 
 /* navbar styling */
@@ -432,9 +452,9 @@ section .title::after{
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
+    outline: none;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -443,7 +463,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: crimson;
 }
 
 /* contact section styling */
@@ -525,7 +545,7 @@ section .title::after{
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 160px;
   height: 45px;
   outline: none;
   font-size: 18px;

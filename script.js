@@ -42,9 +42,9 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Java", "Python", "C++", "Node js", "React", "Angular", "Js"],
+        strings: ["Java", "Python", "C++", "Node js", "React", "Angular", "Js", "PHP", "C#/.NET"],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 80,
         loop: true
     });
 
@@ -60,11 +60,11 @@ $(document).ready(function(){
                 items: 1,
                 nav: false
             },
-            60:{
+            700:{
                 items: 2,
                 nav: false
             },
-            20:{
+            1000:{
                 items: 2,
                 nav: false
             }
