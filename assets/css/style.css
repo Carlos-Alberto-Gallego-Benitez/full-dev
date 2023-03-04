@@ -26,11 +26,7 @@ html{
     border-radius: 20px;
 }
 
-.prg{
-    background-image: url('/images/programador.png');
-    height: 100%;
-    width: 100%;
-}
+
 
 .flex{
    display: flex;
@@ -201,7 +197,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/fondo2.jpg")  no-repeat center center fixed;
+    background: url("../images/fondo2.jpg")  no-repeat center center fixed;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -316,9 +312,13 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 0 28.7352px 0 0;
+    box-shadow: 0 0 14.3676px rgb(0 0 0 / 25%) !important;
+
 }
 .services .serv-content  .card:hover{
     background: crimson;
+    box-shadow: 0 0 14.3676px rgb(0 0 0 / 25%);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -347,6 +347,8 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 0 28.7352px 0 0;
+    box-shadow: 0 0 14.3676px rgb(0 0 0 / 25%);
 }
 .projects .serv-content  .card:hover{
     background: crimson;
