@@ -56,8 +56,8 @@ section{
     margin: auto;
 }
 .projects {
-    background-color: white  !important;
-    color: black !important;
+    background-color: white ;
+    color: black;
 }
 .titleProjects{
     color: white;
@@ -67,6 +67,19 @@ section{
 }
 .about .about-content,
 .services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about, .projects, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif , var(--WorkSans);
+}
+.about .about-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -94,7 +107,7 @@ section .title::before{
     transform: translateX(-50%);
 }
 .imgproyects{
-    width: 250px;
+    width: 200px;
     height: 200px;
     border-radius: 30px;
 }
@@ -344,9 +357,17 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.projects{
+    color:black;
+    background: white;
+}
+.projects .title::before,
+.teams .title::before{
+    background: #fff;
+}
+
 .projects .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -356,7 +377,7 @@ section .title::after{
     box-shadow: 0 0 14.3676px rgb(0 0 0 / 25%);
 }
 .projects .serv-content  .card:hover{
-    background: crimson;
+    background: #f2f2f2;
 }
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
@@ -649,6 +670,12 @@ footer span a:hover{
         padding: 0 50px;
     }
 }
+@media (max-width: 1300px){
+   .projects .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 947px){
     .menu-btn{
         display: block;
@@ -707,13 +734,18 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+ 
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
 }
-
+@media (max-width: 760px) {
+    .projects .serv-content .card{
+        width: 100%;
+    }
+}
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -729,6 +761,29 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+
+    .home{
+        display: flex;
+        background: url('../images/fondo2.jpg') no-repeat center center fixed;
+        height: 88vh;
+        color: #fff;
+        min-height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+@media (max-width: 1360px) {
+    .home{
+        display: flex;
+        background: url('../images/fondo2.jpg') no-repeat center center fixed;
+        height: 88vh;
+        color: #fff;
+        min-height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
     }
 }
 
