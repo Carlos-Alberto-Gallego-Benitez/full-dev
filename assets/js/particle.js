@@ -70,11 +70,11 @@ particlesJS("particles-js", {
         detect_on: "canvas",
         events: {
             onhover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
             },
             onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
             },
             resize: true,
