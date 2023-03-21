@@ -211,22 +211,48 @@ section .title::after{
     filter: brightness(90%);
 }
 
+.z-30 {
+    z-index: 30;
+}
+.relative {
+    position: relative;
+}
+
 
 /* home section styling */
 .home{
     display: flex;
-    background: url("../images/fondo2.jpg")  no-repeat center center fixed;
-    height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    
+    background-color: #111827;
+    height: 100vh;
+}
+.z-10 {
+    z-index: 10;
+}
+
+.inset-0 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.absolute {
+    position: absolute;
 }
 .home .max-width{
   width: 100%;
   display: flex;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+.imgLod-abrv{
+    filter: invert(1);
 }
 .home .max-width .row{
   margin-right: 0;
@@ -235,7 +261,7 @@ section .title::after{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 3.75rem;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -816,4 +842,9 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.icono-full-dev{
+    height: 40px;
+    width: 100%;
+    filter: invert(1);
 }
