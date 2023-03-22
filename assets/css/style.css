@@ -140,8 +140,12 @@ section .title::after{
     padding: 15px 0;
     background: crimson;
 }
+.imgLogo{
+    background-image: url('../images/iconos/FullDev.svg');
+    width: 200px;
+    height: 200px;
+}
 .navbar .max-width{
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
