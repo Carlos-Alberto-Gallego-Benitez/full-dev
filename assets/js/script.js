@@ -1,4 +1,14 @@
-$(document).ready(function(){
+let previusTitle = document.title
+$(window).blur(() => {
+    previusTitle = document.title;
+    document.title = '¡No te vayas😥! ¡Vuelve!'
+})
+$(window).focus(() => {
+    document.title = previusTitle
+})
+
+
+$(document).ready(function () {
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
