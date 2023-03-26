@@ -859,26 +859,30 @@ footer span a:hover{
 
     .home{
         display: flex;
-        background: url('../images/fondo2.jpg') no-repeat center center fixed;
-        height: 88vh;
         color: #fff;
         min-height: 500px;
         background-size: cover;
         background-attachment: fixed;
         font-family: 'Ubuntu', sans-serif;
+        background-color: #111827;
+        height: 100vh;
+    }
+    .log-2{
+        display: none;
     }
 }
 @media (max-width: 1360px) {
     .home{
-        display: flex;
-        background: url('../images/fondo2.jpg') no-repeat center center fixed;
-        height: 88vh;
-        color: #fff;
-        min-height: 500px;
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: 'Ubuntu', sans-serif;
-    }
+    display: flex;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #111827;
+    height: 100vh;
+}
+    
 }
 
 @media (max-width: 500px) {
