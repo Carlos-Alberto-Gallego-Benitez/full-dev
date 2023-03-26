@@ -148,14 +148,29 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
+body .navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    display: block;
 }
+
+body img, svg {
+    vertical-align: initial;
+}
+
+body  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body a{
+    text-decoration: none;
+}
+
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
