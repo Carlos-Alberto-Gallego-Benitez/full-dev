@@ -8,7 +8,9 @@ $(window).focus(() => {
 })
 
 
+
 $(document).ready(function () {
+    
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
@@ -80,4 +82,28 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.carousel-projects').owlCarousel({
+        margin: 220,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 20000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            700: {
+                items: 1,
+                nav: false
+            },
+            1000: {
+                items: 2,
+                nav: false
+            }
+        }
+    });
+
+
 });
