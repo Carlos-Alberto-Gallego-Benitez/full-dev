@@ -15,7 +15,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+        <script src="assets/js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
@@ -53,7 +60,15 @@
             <div class="log-2">
                 <img src="/assets/images/iconos/FullDev-03.png" class="imgLod-abrv" height="200" alt="">
             </div>
-            <div id="particles-js" class="absolute z-10 inset-0" ></div>
+            <!-- <div id="particles-js" class="absolute z-10 inset-0" ></div> -->
+            
+        </div>
+        <div class="cuadricula-padre">
+        <div class="cuadriculas">
+            <div style="transform:rotateX(75deg);position:absolute;top:0;bottom:0;left:0;right:0;">
+                <div class="turbohero-background_lines__oE8Y0"></div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -338,23 +353,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form  id="formSendMail">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" placeholder="Nombre" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Correo" required>
+                                <input type="email" placeholder="Correo" name="email" required>
                             </div>
                         </div>
                         <div class="field">
                             <input type="text" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                            <textarea cols="30" rows="10" name="message" placeholder="Mensaje" required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Enviar mensaje</button>
+                            <button id="btnSendMail" >Enviar mensaje</button>
                         </div>
                     </form>
                 </div>
@@ -367,7 +382,7 @@
         <span>Created By <a href="#">FullDev </a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
     </footer>
     
-    <script src="assets/js/script.js"></script>
+
     <script src="assets/libs/particles.min.js"></script>
     <script src="assets/js/particle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

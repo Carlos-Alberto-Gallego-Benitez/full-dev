@@ -104,6 +104,34 @@ $(document).ready(function () {
             }
         }
     });
+    const emailSend = (event) => {
+        debugger
+        emailjs
+            .sendForm(
+                "service_j30qu4g",
+                "template_cconf59",
+                $('#formSendMail')[0],
+                "wJLRF88_Bm5T_voxN"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("envío exitoso")
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    }
 
+    $("#btnSendMail").on("click", emailSend)
+    $('#formSendMail').submit(() => { return false })
 
+    var form = $("#formSendMail");
+
+    form.submit(function () { 
+        return false
+    })
+        
 });
+
